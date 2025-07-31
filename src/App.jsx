@@ -13,6 +13,13 @@ import Nestedloop from "./NestedLoop"
 import Hooks from "./Hooks"
 import CssModule from "./CssModule"
 import StyleComponent from "./StyleComponent"
+import Bootstrap from "./Bootstrap"
+import UseRef from "./UseRef"
+import Uncontroller from "./UncontrollerComponent"
+import ForwardRef from "./ForwardRef"
+import UseFormStatus from "./UseFormStatus"
+import UseTransition from "./UseTransition"
+
 
 
 function App(){
@@ -120,7 +127,19 @@ function App(){
         {/* Css modules */}
         <CssModule/>
         {/* style component */}
-        <StyleComponent/>
+       <StyleComponent/>
+       {/* react bootstrap npm install react-bootstrap bootstrap */}
+       <Bootstrap/>
+       {/* use of userRef */}
+       <UseRef/>
+       {/* use of uncontroller component in form */}
+       <Uncontroller/>
+       {/* use for forward ref */}
+       <ForwardRef/>
+       {/* use of useFormStatus */}
+       <UseFormStatus/>
+       {/* Use Transition example using loader */}
+       <UseTransition/>
 
 
        
