@@ -19,6 +19,8 @@ import Uncontroller from "./UncontrollerComponent"
 import ForwardRef from "./ForwardRef"
 import UseFormStatus from "./UseFormStatus"
 import UseTransition from "./UseTransition"
+import DriveState from "./DriveState"
+import LiftingState from "./LiftingState"
 
 
 
@@ -140,6 +142,10 @@ function App(){
        <UseFormStatus/>
        {/* Use Transition example using loader */}
        <UseTransition/>
+       {/* use of drive state */}
+       <DriveState/>
+       {/* lifiting state example share data between component */}
+       <LiftingState/>
 
 
        
