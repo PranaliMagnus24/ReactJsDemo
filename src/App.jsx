@@ -21,6 +21,18 @@ import UseFormStatus from "./UseFormStatus"
 import UseTransition from "./UseTransition"
 import DriveState from "./DriveState"
 import LiftingState from "./LiftingState"
+import UpdateArray from "./UpdateArray"
+import UseActionState from "./UseActionState"
+import UseIdHook from "./UseIdHook"
+import CustomeHook from "./CustomeHook"
+import { BrowserRouter, Routes, Route, Link } from "react-router"
+import NavbarDemo from "./Navbar"
+import ProfileDemo from "./Profile"
+import AboutDemo from "./AboutDemo"
+import Home from "./Home"
+import PageNotFound from "./PageNotFound"
+import DynamicRoute from "./DynamicRoute"
+import DynamicRouteDetail from "./DynamicRouteDetail"
 
 
 
@@ -146,6 +158,35 @@ function App(){
        <DriveState/>
        {/* lifiting state example share data between component */}
        <LiftingState/>
+       <UpdateArray/>
+       <UseActionState/>
+       <UseIdHook/>
+       <CustomeHook/>
+
+
+        <BrowserRouter>
+        <NavbarDemo/>
+        {/* <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link> */}
+
+        {/* <Routes>
+          <Route path="/" element={<h1>Home Page</h1>}></Route>
+          <Route path="/about" element={<StyleComponent/>}></Route>
+          <Route path="/contact" element={<h1>Contact Page</h1>}></Route>
+          <Route path="/" element={<NavbarDemo/>}></Route>
+        </Routes> */}
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutDemo />} />
+        <Route path="/profile" element={<ProfileDemo />} />
+        <Route path="/users/list?" element={<DynamicRoute />} />
+        <Route path="/users/details/:id/:name?" element={<DynamicRouteDetail />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+
+        </BrowserRouter> 
+
 
 
        
